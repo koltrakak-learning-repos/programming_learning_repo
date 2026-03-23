@@ -30,7 +30,7 @@ add_executable(
 )
 target_link_libraries(
   hello_test
-  GTest::gtest_main # provides the main()
+  GTest::gtest_main # provides the main() and the include dirs for the header files
 )
 
 # enable CMake’s test runner to discover the tests included in the binary, using the GoogleTest CMake module.
