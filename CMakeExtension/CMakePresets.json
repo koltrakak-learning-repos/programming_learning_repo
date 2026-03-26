@@ -1,0 +1,17 @@
+{
+    "version": 8,
+    "configurePresets": [
+        {
+            "name": "preset",
+            "displayName": "Clang 23.0.0git x86_64-unknown-linux-gnu",
+            "description": "Using compilers: C = /usr/local/bin/clang, CXX = /usr/local/bin/clang++",
+            "binaryDir": "${sourceDir}/out/build/${presetName}",
+            "cacheVariables": {
+                "CMAKE_INSTALL_PREFIX": "${sourceDir}/out/install/${presetName}",
+                "CMAKE_C_COMPILER": "/usr/local/bin/clang",
+                "CMAKE_CXX_COMPILER": "/usr/local/bin/clang++",
+                "CMAKE_BUILD_TYPE": "Debug"
+            }
+        }
+    ]
+}
